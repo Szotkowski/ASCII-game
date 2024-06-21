@@ -21,7 +21,7 @@ jobs:
         uses: lukka/get-cmake@v3.29.6
         
       - name: Clean previous build
-        run: if exist cmake-build-debug rmdir /s /q cmake-build-debug
+        run: if (Test-Path -Path "cmake-build-debug") { Remove-Item -Recurse -Force "cmake-build-debug" }
   
       - name: Configure CMake
         run: cmake -S . -B cmake-build-debug
