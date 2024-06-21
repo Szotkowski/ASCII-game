@@ -1,0 +1,3 @@
+C:/Users/Michael Szotkowski/CLionProjects/ASCII-Game/cmake-build-debug/CMakeFiles/ASCII_Game.dir
+C:/Users/Michael Szotkowski/CLionProjects/ASCII-Game/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Michael Szotkowski/CLionProjects/ASCII-Game/cmake-build-debug/CMakeFiles/rebuild_cache.dir
