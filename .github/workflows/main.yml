@@ -5,6 +5,7 @@ on:
     branches:
       - master
   workflow_dispatch:
+  
 jobs:
   build:
     name: Build
@@ -17,48 +18,41 @@ jobs:
           fetch-depth: 0
   
       - name: Set up CMake
-        uses: lukka/get-cmake@latest
-
+        uses: lukka/get-cmake@v3.29.6
+        
+      - name: Clean previous build
+        run: if exist cmake-build-debug rmdir /s /q cmake-build-debug
+  
       - name: Configure CMake
         run: cmake -S . -B cmake-build-debug
-
+  
       - name: Build
         run: cmake --build cmake-build-debug --config Debug
-
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v3
+  
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
         with:
-          name: ascii_game_exe
+          name: ascii-game
           path: cmake-build-debug/ASCII_Game.exe
-
-  upload:
-    needs: build
-    name: Deploy
-    runs-on: windows-latest
-
-    steps:
-      - name: Download Artifact
-        uses: actions/download-artifact@v3
+  
+    upload:
+      needs: build
+      runs-on: ubuntu-latest
+      steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v2
         with:
-          name: ascii_game_exe
-          path: ./ascii_game_exe
-
-      - name: Install Butler
+          name: ascii-game
+          path: .
+  
+      - name: Install butler
         run: |
-          sudo apt-get update
-          sudo apt-get install -y unzip
           curl -L -o butler.zip https://broth.itch.ovh/butler/linux-amd64/latest/archive/default
-          unzip butler.zip -d ~/butler
-          sudo mv ~/butler/butler /usr/local/bin/
-      
-      - name: Authenticate with Butler
+          unzip butler.zip -d butler
+          sudo mv butler/butler /usr/local/bin
+  
+      - name: Upload to Itch.io
         env:
           BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
         run: |
-          butler login
-
-      - name: Push to Itch.io
-        env:
-          BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
-        run: |
-          butler push ./ascii_game_exe/ASCII_Game.exe your-itch-username/your-game:win-beta
+          butler push ASCII_Game.exe your-itch-username/your-game-name:windows
