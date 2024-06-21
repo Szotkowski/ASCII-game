@@ -35,7 +35,7 @@ jobs:
           name: ascii-game
           path: cmake-build-debug/ASCII_Game.exe
   
-    upload:
+  upload:
       needs: build
       runs-on: ubuntu-latest
       steps:
