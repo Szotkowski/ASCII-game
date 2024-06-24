@@ -3,8 +3,6 @@
 //
 
 #undef max
-#define NOMINMAX
-
 #include "Map.h"
 
 Map* Map::instance = nullptr;
