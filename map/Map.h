@@ -6,6 +6,8 @@
 #define NEW_PROJEKT_ZOO_MAP_H
 
 #include <conio.h>
+#include <optional>
+#include <limits>
 #include "LocationDirector.h"
 
 enum Difficulty {

@@ -2,6 +2,9 @@
 // Created by Michael Szotkowski on 6/17/2024.
 //
 
+#undef max
+#define NOMINMAX
+
 #include "Map.h"
 
 Map* Map::instance = nullptr;
