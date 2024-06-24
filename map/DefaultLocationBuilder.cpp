@@ -4,6 +4,8 @@
 
 #include "DefaultLocationBuilder.h"
 
+#include <random>
+
 DefaultLocationBuilder::DefaultLocationBuilder() {
     LOG_INFO("Creating DefaultLocationBuilder instance.");
     m_location = new Location("Default Location");
@@ -169,7 +171,7 @@ void DefaultLocationBuilder::setMonsters(int monsterPercentage) {
     }
 
     // Shuffle the available positions
-    std::random_shuffle(availablePositions.begin(), availablePositions.end());
+    std::shuffle(availablePositions.begin(), availablePositions.end(), std::mt19937(std::random_device()()));
 
     for (int i = 0; i < numMonsters && !availablePositions.empty(); ++i) {
         MonsterType monsterType = static_cast<MonsterType>(rand() % 3 + 1); // Random item type between 1 and 3
@@ -214,7 +216,7 @@ void DefaultLocationBuilder::setItems(int itemPercentage) {
     }
 
     // Shuffle the available positions
-    std::random_shuffle(availablePositions.begin(), availablePositions.end());
+    std::shuffle(availablePositions.begin(), availablePositions.end(), std::mt19937(std::random_device()()));
 
     for (int i = 0; i < numItems && !availablePositions.empty(); ++i) {
         ItemTypes itemType = static_cast<ItemTypes>(rand() % 3 + 1); // Random item type between 1 and 3
@@ -261,7 +263,7 @@ void DefaultLocationBuilder::setGold(int goldPercentage) {
     }
 
     // Shuffle the available positions
-    std::random_shuffle(availablePositions.begin(), availablePositions.end());
+    std::shuffle(availablePositions.begin(), availablePositions.end(), std::mt19937(std::random_device()()));
 
     for (int i = 0; i < numGoldPiles && !availablePositions.empty(); ++i) {
         int goldAmount = rand() % 101 + 50; // Random gold amount between 50 and 150

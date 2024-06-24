@@ -45,11 +45,9 @@ void Map::setMapName() {
 
 void Map::setMapDifficulty() {
     std::cout << "Select difficulty level: [1] Easy  [2] Medium  [3] Hard" << std::endl;
-    int choice = 0;
     while (true) {
         char input = _getch();
         if (input >= '1' && input <= '3') {
-            choice = input - '0'; // Convert character to integer
             break;
         }
         std::cout << "Invalid choice. Please enter a number between 1 and 3." << std::endl;
