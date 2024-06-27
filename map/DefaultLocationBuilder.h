@@ -5,6 +5,7 @@
 #ifndef NEW_PROJEKT_ZOO_DEFAULTLOCATIONBUILDER_H
 #define NEW_PROJEKT_ZOO_DEFAULTLOCATIONBUILDER_H
 
+#include <algorithm>
 #include "LocationBuilder.h"
 #include "Location.h"
 #include "../monster/Monster.h"
