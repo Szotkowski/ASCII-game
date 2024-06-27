@@ -19,7 +19,7 @@ jobs:
   
       - name: Set up MinGW
         run: |
-          choco install mingw
+          choco install mingw --version=13.2.0
           echo "C:\ProgramData\chocolatey\lib\mingw\tools\install\mingw64\bin" >> $GITHUB_PATH
   
       - name: Verify MinGW installation
@@ -29,10 +29,10 @@ jobs:
         run: if (Test-Path -Path "cmake-build-debug") { Remove-Item -Recurse -Force "cmake-build-debug" }
   
       - name: Configure CMake
-        run: cmake -G "MinGW Makefiles" -S . -B cmake-build-debug -DCMAKE_BUILD_TYPE=Debug
+        run: cmake -G "MinGW Makefiles" -S . -B cmake-build-debug -DCMAKE_BUILD_TYPE=Release
   
       - name: Build
-        run: cmake --build cmake-build-debug --config Debug
+        run: cmake --build cmake-build-debug --config Release
   
       - name: Package executable and dependencies
         run: |
