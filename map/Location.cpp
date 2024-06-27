@@ -3,6 +3,7 @@
 //
 
 #undef max
+#define NOMINMAX
 #include "Location.h"
 #include "../GameEngine.h"
 
