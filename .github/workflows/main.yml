@@ -30,7 +30,7 @@ jobs:
         run: cmake --build cmake-build-debug --config Debug
   
       - name: Upload artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: ascii-game
           path: cmake-build-debug/ASCII_Game.exe
@@ -40,7 +40,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
       - name: Download artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: ascii-game
           path: .
