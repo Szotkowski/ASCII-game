@@ -5,6 +5,7 @@
 #ifndef NEW_PROJEKT_ZOO_GAMEENGINE_H
 #define NEW_PROJEKT_ZOO_GAMEENGINE_H
 
+#include <vector>
 #include "map/Map.h"
 #include "Menu.h"
 #include "inventory/Inventory.h"

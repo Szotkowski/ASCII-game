@@ -5,9 +5,11 @@
 #ifndef NEW_PROJEKT_ZOO_MAP_H
 #define NEW_PROJEKT_ZOO_MAP_H
 
+#define NOMINMAX
 #include <conio.h>
 #include <optional>
 #include <limits>
+#include <vector>
 #include "LocationDirector.h"
 
 enum Difficulty {

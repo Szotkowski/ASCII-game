@@ -5,8 +5,10 @@
 #ifndef NEW_PROJEKT_ZOO_LOCATION_H
 #define NEW_PROJEKT_ZOO_LOCATION_H
 
+#define NOMINMAX
 #include <unordered_map>
 #include <optional>
+#include <vector>
 #include "Tile.h"
 #include "../gold/Gold.h"
 #include "../player/Player.h"
