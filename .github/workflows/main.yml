@@ -20,10 +20,7 @@ jobs:
       - name: Set up MinGW
         run: |
           choco install mingw
-          refreshenv
-  
-      - name: Add MinGW to PATH
-        run: echo "::add-path::C:\tools\mingw64\bin"
+          echo "C:\ProgramData\chocolatey\lib\mingw\tools\install\mingw64\bin" >> $GITHUB_PATH
   
       - name: Verify MinGW installation
         run: g++ --version
@@ -36,12 +33,17 @@ jobs:
   
       - name: Build
         run: cmake --build cmake-build-debug --config Debug
-
+  
+      - name: Package executable and dependencies
+        run: |
+          cd cmake-build-debug
+          # Copy any necessary DLLs here (e.g., libstdc++-6.dll, libgcc_s_seh-1.dll)
+  
       - name: Upload artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: ascii-game
-          path: '**/ASCII_Game.exe'
+          path: cmake-build-debug/ASCII_Game.exe
   
   upload:
       needs: build
