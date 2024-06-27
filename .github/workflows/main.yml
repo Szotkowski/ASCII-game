@@ -29,17 +29,14 @@ jobs:
       - name: Build
         run: cmake --build cmake-build-debug --config Debug
 
-      - name: List directory contents
-        run: dir .
+      - name: List all directory contents recursively
+        run: Get-ChildItem -Path cmake-build-debug -Recurse
 
-      - name: List directory contents
-        run: dir cmake-build-debug
-  
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v2
         with:
           name: ascii-game
-          path: cmake-build-debug/ASCII_Game.exe
+          path: '**/ASCII_Game.exe'
   
   upload:
       needs: build
