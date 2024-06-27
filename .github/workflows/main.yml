@@ -54,15 +54,14 @@ jobs:
         with:
           name: ascii-game
           path: .
-  
+
       - name: Install butler
         run: |
-          curl -L -o butler.zip https://broth.itch.ovh/butler/linux-amd64/latest/archive/default
-          unzip butler.zip -d butler
           sudo mv butler/butler /usr/local/bin
+          sudo chmod +x /usr/local/bin/butler
   
       - name: Upload to Itch.io
         env:
           BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
         run: |
-          butler push ASCII_Game.exe your-itch-username/your-game-name:windows
+          butler push ASCII_Game.exe szotkowski/ascii-game:windows
