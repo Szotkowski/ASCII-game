@@ -28,6 +28,12 @@ jobs:
   
       - name: Build
         run: cmake --build cmake-build-debug --config Debug
+
+      - name: List directory contents
+        run: dir .
+
+      - name: List directory contents
+        run: dir cmake-build-debug
   
       - name: Upload artifact
         uses: actions/upload-artifact@v4
