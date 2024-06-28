@@ -55,10 +55,13 @@ jobs:
           name: ascii-game
           path: .
 
-      - name: Install butler
+      - name: Install Butler
         run: |
-          sudo mv butler/butler /usr/local/bin
-          sudo chmod +x /usr/local/bin/butler
+          BUTLER_VERSION=$(curl -s https://broth.itch.ovh/butler/latest-metadata.json | jq -r .version)
+          BUTLER_URL="https://broth.itch.ovh/butler/${BUTLER_VERSION}/archive/default/butler-linux-amd64.tar.gz"
+          curl -L -o butler.tar.gz $BUTLER_URL
+          tar -xzf butler.tar.gz -C /usr/local/bin
+          butler --version
   
       - name: Upload to Itch.io
         env:
