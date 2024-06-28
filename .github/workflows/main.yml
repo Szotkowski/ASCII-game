@@ -57,14 +57,14 @@ jobs:
 
       - name: Install Butler
         run: |
-          BUTLER_VERSION=$(curl -s https://broth.itch.ovh/butler/latest-metadata.json | jq -r .version)
-          BUTLER_URL="https://broth.itch.ovh/butler/${BUTLER_VERSION}/archive/default/butler-linux-amd64.tar.gz"
-          curl -L -o butler.tar.gz $BUTLER_URL
-          tar -xzf butler.tar.gz -C /usr/local/bin
-          butler --version
+          curl -L -o butler.zip https://broth.itch.ovh/butler/windows-amd64/latest/archive/default
+          tar -xzf butler.zip -C /usr/local/bin
+  
+      - name: Verify Butler Installation
+        run: /usr/local/bin/butler -V
   
       - name: Upload to Itch.io
         env:
           BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
         run: |
-          butler push ASCII_Game.exe szotkowski/ascii-game:windows
+          /usr/local/bin/butler push ASCII_Game.exe szotkowski/ascii-game:windows
