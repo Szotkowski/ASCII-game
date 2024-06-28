@@ -35,8 +35,9 @@ jobs:
       - name: Build
         run: cmake --build cmake-build-debug --config Release
 
-      - name: Download certificate
-        run: echo "${{ secrets.CERT }}" > code_signing_cert.pfx
+      - name: Decode and save the certificate
+        run: |
+          echo ${{ secrets.CERT_BASE64 }} | base64 -d > code_signing_cert.pfx
 
       - name: Install Windows SDK
         run: choco install windows-sdk-10-version-1903-all
@@ -44,7 +45,7 @@ jobs:
       - name: Sign the executable
         run: |
           signtool sign /f code_signing_cert.pfx /p ${{ secrets.CERT_PASSWORD }} /t http://timestamp.digicert.com cmake-build-debug/ASCII_Game.exe
-  
+
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
