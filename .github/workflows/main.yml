@@ -67,6 +67,6 @@ jobs:
   
       - name: Upload to Itch.io
         env:
-          BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
+          BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
         run: |
-          /usr/local/bin/butler push ASCII_Game.exe szotkowski/ascii-game:windows
+          butler push ASCII_Game.exe ASCII_Game.exe szotkowski/ascii-game:windows
