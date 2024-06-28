@@ -38,7 +38,7 @@ jobs:
       - name: Decode and save the certificate
         run: |
           $certContent = [System.Convert]::FromBase64String("${{ secrets.CERT_BASE64 }}")
-          Set-Content -Path $env:TEMP\code_signing_cert.pfx -Value $certContent -Encoding Byte
+          Set-Content -Path $env:TEMP\code_signing_cert.pfx -Value $certContent
 
       - name: Sign the executable
         run: |
