@@ -40,11 +40,23 @@ jobs:
           $certContent = [System.Convert]::FromBase64String("${{ secrets.CERT_BASE64 }}")
           Set-Content -Path $env:TEMP\code_signing_cert.pfx -Value $certContent
 
+      - name: Verify certificate file
+        run: |
+          if (!(Test-Path -Path $env:TEMP\code_signing_cert.pfx)) {
+            Write-Error "Certificate file not found at $env:TEMP\code_signing_cert.pfx"
+            exit 1
+          }
+
       - name: Sign the executable
         run: |
           $certPath = "$env:TEMP\code_signing_cert.pfx"
           $securePassword = ConvertTo-SecureString "${{ secrets.CERT_PASSWORD }}" -AsPlainText -Force
-          $cert = Get-PfxCertificate -FilePath $certPath -Password $securePassword
+          try {
+            $cert = Get-PfxCertificate -FilePath $certPath -Password $securePassword
+          } catch {
+            Write-Error "Failed to load certificate: $_"
+            exit 1
+          }
           Set-AuthenticodeSignature -FilePath cmake-build-debug/ASCII_Game.exe -Certificate $cert -TimestampServer "http://timestamp.digicert.com"
 
       - name: Upload artifact
