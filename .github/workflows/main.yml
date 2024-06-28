@@ -41,7 +41,8 @@ jobs:
 
       - name: Sign the executable
         run: |
-          $cert = Get-PfxCertificate ./code_signing_cert.pfx
+          $certPath = Join-Path $env:GITHUB_WORKSPACE "code_signing_cert.pfx"
+          $cert = Get-PfxCertificate -FilePath $certPath
           Set-AuthenticodeSignature -FilePath cmake-build-debug/ASCII_Game.exe -Certificate $cert -TimestampServer "http://timestamp.digicert.com"
 
       - name: Upload artifact
