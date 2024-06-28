@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - development
   workflow_dispatch:
   
 jobs:
@@ -33,11 +34,16 @@ jobs:
   
       - name: Build
         run: cmake --build cmake-build-debug --config Release
-  
-      - name: Package executable and dependencies
+
+      - name: Download certificate
+        run: echo "${{ secrets.CERT }}" > code_signing_cert.pfx
+
+      - name: Install Windows SDK
+        run: choco install windows-sdk-10-version-1903-all
+
+      - name: Sign the executable
         run: |
-          cd cmake-build-debug
-          # Copy any necessary DLLs here (e.g., libstdc++-6.dll, libgcc_s_seh-1.dll)
+          signtool sign /f code_signing_cert.pfx /p ${{ secrets.CERT_PASSWORD }} /t http://timestamp.digicert.com cmake-build-debug/ASCII_Game.exe
   
       - name: Upload artifact
         uses: actions/upload-artifact@v4
@@ -54,19 +60,15 @@ jobs:
         with:
           name: ascii-game
           path: .
-
-      - name: Install Butler
-        run: |
-          curl -L -o butler.zip https://broth.itch.zone/butler/linux-amd64/15.21.0/archive/default
-          mkdir butler
-          unzip butler.zip -d butler
-          sudo mv butler/butler /usr/local/bin/butler
   
-      - name: Verify Butler Installation
-        run: /usr/local/bin/butler -V
+      - name: Install butler
+        run: |
+          curl -L -o butler.zip https://broth.itch.ovh/butler/linux-amd64/latest/archive/default
+          unzip butler.zip -d butler
+          sudo mv butler/butler /usr/local/bin
   
       - name: Upload to Itch.io
         env:
-          BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
+          BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
         run: |
-          butler push ASCII_Game.exe ${{ vars.ITCH_USERNAME }}/${{ vars.GAME_NAME }}:windows
+          butler push ASCII_Game.exe your-itch-username/your-game-name:windows
