@@ -69,4 +69,4 @@ jobs:
         env:
           BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
         run: |
-          butler push ASCII_Game.exe ${{ env.ITCH_USERNAME }}/${{ env.GAME_NAME }}:windows
+          butler push ASCII_Game.exe ${{ vars.ITCH_USERNAME }}/${{ vars.GAME_NAME }}:windows
