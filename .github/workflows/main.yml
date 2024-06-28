@@ -37,12 +37,14 @@ jobs:
 
       - name: Decode and save the certificate
         run: |
-          [System.Convert]::FromBase64String("${{ secrets.CERT_BASE64 }}") | Set-Content -Path code_signing_cert.pfx -AsByteStream
+          $certContent = [System.Convert]::FromBase64String("${{ secrets.CERT_BASE64 }}")
+          Set-Content -Path $env:TEMP\code_signing_cert.pfx -Value $certContent -Encoding Byte
 
       - name: Sign the executable
         run: |
-          $certPath = Join-Path $env:GITHUB_WORKSPACE "code_signing_cert.pfx"
-          $cert = Get-PfxCertificate -FilePath $certPath
+          $certPath = "$env:TEMP\code_signing_cert.pfx"
+          $securePassword = ConvertTo-SecureString "${{ secrets.CERT_PASSWORD }}" -AsPlainText -Force
+          $cert = Get-PfxCertificate -FilePath $certPath -Password $securePassword
           Set-AuthenticodeSignature -FilePath cmake-build-debug/ASCII_Game.exe -Certificate $cert -TimestampServer "http://timestamp.digicert.com"
 
       - name: Upload artifact
