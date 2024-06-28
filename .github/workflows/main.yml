@@ -57,8 +57,10 @@ jobs:
 
       - name: Install Butler
         run: |
-          curl -L -o butler.zip https://broth.itch.ovh/butler/windows-amd64/latest/archive/default
-          tar -xzf butler.zip -C /usr/local/bin
+          curl -L -o butler.zip https://broth.itch.ovh/butler/windows-amd64/latest/butler.zip
+          mkdir butler
+          unzip butler.zip -d butler
+          sudo mv butler/butler /usr/local/bin/butler
   
       - name: Verify Butler Installation
         run: /usr/local/bin/butler -V
