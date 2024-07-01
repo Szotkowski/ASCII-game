@@ -65,12 +65,12 @@ jobs:
   
       - name: Install butler
         run: |
-          curl -L -o butler.zip https://broth.itch.ovh/butler/linux-amd64/latest/archive/default
+          curl -L -o butler.zip https://broth.itch.zone/butler/linux-amd64/15.21.0/archive/default
           unzip butler.zip -d butler
           sudo mv butler/butler /usr/local/bin
   
       - name: Upload to Itch.io
         env:
-          BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
+          BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
         run: |
-          butler push ASCII_Game.exe your-itch-username/your-game-name:windows
+          butler push ASCII_Game.exe ${{ vars.ITCH_USERNAME }}/${{ vars.GAME_NAME }}:windows
