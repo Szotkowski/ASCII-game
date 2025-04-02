@@ -75,7 +75,7 @@
 <pre><code class="language-sh">./ASCII-game
 </code></pre>
 <h3>Testing</h3>
-<p>Ascii-game uses the {<strong>test_framework</strong>} test framework. Run the test suite with:</p>
+<p>Run the test suite with:</p>
 <p><strong>Using <a href="https://isocpp.org/">cmake</a>:</strong></p>
 <pre><code class="language-sh">ctest
 </code></pre>
