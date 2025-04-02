@@ -1,12 +1,12 @@
 <div id="top" class="">
 
 <div align="center" class="text-center">
-<h1>ASCII-GAME</h1>
+<h1>ElderGlyph</h1>
 <p><em>Unleash your imagination in a text-based adventure.</em></p>
 
-<img alt="last-commit" src="https://img.shields.io/github/last-commit/Szotkowski/ASCII-game?style=flat&amp;logo=git&amp;logoColor=white&amp;color=0080ff" class="inline-block mx-1" style="margin: 0px 2px;">
-<img alt="repo-top-language" src="https://img.shields.io/github/languages/top/Szotkowski/ASCII-game?style=flat&amp;color=0080ff" class="inline-block mx-1" style="margin: 0px 2px;">
-<img alt="repo-language-count" src="https://img.shields.io/github/languages/count/Szotkowski/ASCII-game?style=flat&amp;color=0080ff" class="inline-block mx-1" style="margin: 0px 2px;">
+<img alt="last-commit" src="https://img.shields.io/github/last-commit/Szotkowski/ElderGlyph?style=flat&amp;logo=git&amp;logoColor=white&amp;color=0080ff" class="inline-block mx-1" style="margin: 0px 2px;">
+<img alt="repo-top-language" src="https://img.shields.io/github/languages/top/Szotkowski/ElderGlyph?style=flat&amp;color=0080ff" class="inline-block mx-1" style="margin: 0px 2px;">
+<img alt="repo-language-count" src="https://img.shields.io/github/languages/count/Szotkowski/ElderGlyph?style=flat&amp;color=0080ff" class="inline-block mx-1" style="margin: 0px 2px;">
 <p><em>Built with the tools and technologies:</em></p>
 <img alt="JSON" src="https://img.shields.io/badge/JSON-000000.svg?style=flat&amp;logo=JSON&amp;logoColor=white" class="inline-block mx-1" style="margin: 0px 2px;">
 <img alt="C++" src="https://img.shields.io/badge/C++-00599C.svg?style=flat&amp;logo=C++&amp;logoColor=white" class="inline-block mx-1" style="margin: 0px 2px;">
@@ -31,8 +31,8 @@
 </ul>
 <hr>
 <h2>Overview</h2>
-<p>ASCII-game is a powerful developer tool designed to create engaging text-based gaming experiences with a focus on modularity and ease of use.</p>
-<p><strong>Why ASCII-game?</strong></p>
+<p>ElderGlyph is a powerful developer tool designed to create engaging text-based gaming experiences with a focus on modularity and ease of use.</p>
+<p><strong>Why ElderGlyph?</strong></p>
 <p>This project empowers developers to craft immersive adventures while simplifying the development process. The core features include:</p>
 <ul class="list-disc pl-4 my-0">
 <li class="my-0">🎮 <strong>Modular Architecture:</strong> Easily expand and maintain your game without disrupting existing functionality.</li>
@@ -50,16 +50,16 @@
 <li class="my-0"><strong>Package Manager:</strong> Cmake</li>
 </ul>
 <h3>Installation</h3>
-<p>Build ASCII-game from the source and intsall dependencies:</p>
+<p>Build ElderGlyph from the source and intsall dependencies:</p>
 <ol>
 <li class="my-0">
 <p><strong>Clone the repository:</strong></p>
-<pre><code class="language-sh">❯ git clone https://github.com/Szotkowski/ASCII-game
+<pre><code class="language-sh">❯ git clone https://github.com/Szotkowski/ElderGlyph
 </code></pre>
 </li>
 <li class="my-0">
 <p><strong>Navigate to the project directory:</strong></p>
-<pre><code class="language-sh">❯ cd ASCII-game
+<pre><code class="language-sh">❯ cd ElderGlyph
 </code></pre>
 </li>
 <li class="my-0">
@@ -72,7 +72,7 @@
 <h3>Usage</h3>
 <p>Run the project with:</p>
 <p><strong>Using <a href="https://isocpp.org/">cmake</a>:</strong></p>
-<pre><code class="language-sh">./ASCII-game
+<pre><code class="language-sh">./ElderGlyph
 </code></pre>
 <h3>Testing</h3>
 <p>Run the test suite with:</p>
