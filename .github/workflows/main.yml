@@ -44,14 +44,14 @@ jobs:
       - name: Sign executable
         run: |
           $cert = Get-PfxCertificate -FilePath "$env:TEMP\code_signing_cert.pfx" -Password (ConvertTo-SecureString -String "${{ secrets.CERT_PASSWORD }}" -AsPlainText -Force)
-          Set-AuthenticodeSignature -FilePath cmake-build-debug/ASCII_Game.exe -Certificate $cert -TimestampServer "http://timestamp.digicert.com"
+          Set-AuthenticodeSignature -FilePath cmake-build-debug/ElderGlyph.exe -Certificate $cert -TimestampServer "http://timestamp.digicert.com"
         shell: pwsh
         
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: ascii-game
-          path: cmake-build-debug/ASCII_Game.exe
+          name: elderglyph
+          path: cmake-build-debug/ElderGlyph.exe
   
   upload:
       needs: build
@@ -60,7 +60,7 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
-          name: ascii-game
+          name: elderglyph
           path: .
   
       - name: Install butler
@@ -73,4 +73,4 @@ jobs:
         env:
           BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
         run: |
-          butler push ASCII_Game.exe ${{ vars.ITCH_USERNAME }}/${{ vars.GAME_NAME }}:windows
+          butler push ElderGlyph.exe ${{ vars.ITCH_USERNAME }}/${{ vars.GAME_NAME }}:windows
