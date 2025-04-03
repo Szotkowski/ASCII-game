@@ -12,7 +12,7 @@
 
 # =============================================================================
 # Project: ASCII_Game
-# Configurations: Release
+# Configurations: Debug
 # =============================================================================
 
 #############################################
@@ -24,7 +24,7 @@ ninja_required_version = 1.5
 #############################################
 # Set configuration variable for custom commands.
 
-CONFIGURATION = Release
+CONFIGURATION = Debug
 # =============================================================================
 # Include auxiliary files.
 
@@ -49,165 +49,165 @@ cmake_ninja_workdir = C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/cma
 
 build cmake_object_order_depends_target_ASCII_Game: phony || CMakeFiles/ASCII_Game.dir
 
-build CMakeFiles/ASCII_Game.dir/main.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/main.cpp || cmake_object_order_depends_target_ASCII_Game
+build CMakeFiles/ASCII_Game.dir/main.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/main.cpp || cmake_object_order_depends_target_ASCII_Game
   DEP_FILE = CMakeFiles\ASCII_Game.dir\main.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ASCII_Game.dir
   OBJECT_FILE_DIR = CMakeFiles\ASCII_Game.dir
 
-build CMakeFiles/ASCII_Game.dir/GameEngine.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/GameEngine.cpp || cmake_object_order_depends_target_ASCII_Game
+build CMakeFiles/ASCII_Game.dir/GameEngine.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/GameEngine.cpp || cmake_object_order_depends_target_ASCII_Game
   DEP_FILE = CMakeFiles\ASCII_Game.dir\GameEngine.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ASCII_Game.dir
   OBJECT_FILE_DIR = CMakeFiles\ASCII_Game.dir
 
-build CMakeFiles/ASCII_Game.dir/Menu.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/Menu.cpp || cmake_object_order_depends_target_ASCII_Game
+build CMakeFiles/ASCII_Game.dir/Menu.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/Menu.cpp || cmake_object_order_depends_target_ASCII_Game
   DEP_FILE = CMakeFiles\ASCII_Game.dir\Menu.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ASCII_Game.dir
   OBJECT_FILE_DIR = CMakeFiles\ASCII_Game.dir
 
-build CMakeFiles/ASCII_Game.dir/inventory/Inventory.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/inventory/Inventory.cpp || cmake_object_order_depends_target_ASCII_Game
+build CMakeFiles/ASCII_Game.dir/inventory/Inventory.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/inventory/Inventory.cpp || cmake_object_order_depends_target_ASCII_Game
   DEP_FILE = CMakeFiles\ASCII_Game.dir\inventory\Inventory.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ASCII_Game.dir
   OBJECT_FILE_DIR = CMakeFiles\ASCII_Game.dir\inventory
 
-build CMakeFiles/ASCII_Game.dir/item/Armor.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/item/Armor.cpp || cmake_object_order_depends_target_ASCII_Game
+build CMakeFiles/ASCII_Game.dir/item/Armor.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/item/Armor.cpp || cmake_object_order_depends_target_ASCII_Game
   DEP_FILE = CMakeFiles\ASCII_Game.dir\item\Armor.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ASCII_Game.dir
   OBJECT_FILE_DIR = CMakeFiles\ASCII_Game.dir\item
 
-build CMakeFiles/ASCII_Game.dir/item/Item.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/item/Item.cpp || cmake_object_order_depends_target_ASCII_Game
+build CMakeFiles/ASCII_Game.dir/item/Item.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/item/Item.cpp || cmake_object_order_depends_target_ASCII_Game
   DEP_FILE = CMakeFiles\ASCII_Game.dir\item\Item.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ASCII_Game.dir
   OBJECT_FILE_DIR = CMakeFiles\ASCII_Game.dir\item
 
-build CMakeFiles/ASCII_Game.dir/item/ItemFactory.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/item/ItemFactory.cpp || cmake_object_order_depends_target_ASCII_Game
+build CMakeFiles/ASCII_Game.dir/item/ItemFactory.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/item/ItemFactory.cpp || cmake_object_order_depends_target_ASCII_Game
   DEP_FILE = CMakeFiles\ASCII_Game.dir\item\ItemFactory.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ASCII_Game.dir
   OBJECT_FILE_DIR = CMakeFiles\ASCII_Game.dir\item
 
-build CMakeFiles/ASCII_Game.dir/item/Potion.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/item/Potion.cpp || cmake_object_order_depends_target_ASCII_Game
+build CMakeFiles/ASCII_Game.dir/item/Potion.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/item/Potion.cpp || cmake_object_order_depends_target_ASCII_Game
   DEP_FILE = CMakeFiles\ASCII_Game.dir\item\Potion.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ASCII_Game.dir
   OBJECT_FILE_DIR = CMakeFiles\ASCII_Game.dir\item
 
-build CMakeFiles/ASCII_Game.dir/item/Weapon.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/item/Weapon.cpp || cmake_object_order_depends_target_ASCII_Game
+build CMakeFiles/ASCII_Game.dir/item/Weapon.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/item/Weapon.cpp || cmake_object_order_depends_target_ASCII_Game
   DEP_FILE = CMakeFiles\ASCII_Game.dir\item\Weapon.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ASCII_Game.dir
   OBJECT_FILE_DIR = CMakeFiles\ASCII_Game.dir\item
 
-build CMakeFiles/ASCII_Game.dir/map/DefaultLocationBuilder.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/map/DefaultLocationBuilder.cpp || cmake_object_order_depends_target_ASCII_Game
+build CMakeFiles/ASCII_Game.dir/map/DefaultLocationBuilder.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/map/DefaultLocationBuilder.cpp || cmake_object_order_depends_target_ASCII_Game
   DEP_FILE = CMakeFiles\ASCII_Game.dir\map\DefaultLocationBuilder.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ASCII_Game.dir
   OBJECT_FILE_DIR = CMakeFiles\ASCII_Game.dir\map
 
-build CMakeFiles/ASCII_Game.dir/map/Location.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/map/Location.cpp || cmake_object_order_depends_target_ASCII_Game
+build CMakeFiles/ASCII_Game.dir/map/Location.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/map/Location.cpp || cmake_object_order_depends_target_ASCII_Game
   DEP_FILE = CMakeFiles\ASCII_Game.dir\map\Location.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ASCII_Game.dir
   OBJECT_FILE_DIR = CMakeFiles\ASCII_Game.dir\map
 
-build CMakeFiles/ASCII_Game.dir/map/LocationBuilder.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/map/LocationBuilder.cpp || cmake_object_order_depends_target_ASCII_Game
+build CMakeFiles/ASCII_Game.dir/map/LocationBuilder.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/map/LocationBuilder.cpp || cmake_object_order_depends_target_ASCII_Game
   DEP_FILE = CMakeFiles\ASCII_Game.dir\map\LocationBuilder.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ASCII_Game.dir
   OBJECT_FILE_DIR = CMakeFiles\ASCII_Game.dir\map
 
-build CMakeFiles/ASCII_Game.dir/map/LocationDirector.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/map/LocationDirector.cpp || cmake_object_order_depends_target_ASCII_Game
+build CMakeFiles/ASCII_Game.dir/map/LocationDirector.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/map/LocationDirector.cpp || cmake_object_order_depends_target_ASCII_Game
   DEP_FILE = CMakeFiles\ASCII_Game.dir\map\LocationDirector.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ASCII_Game.dir
   OBJECT_FILE_DIR = CMakeFiles\ASCII_Game.dir\map
 
-build CMakeFiles/ASCII_Game.dir/map/Map.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/map/Map.cpp || cmake_object_order_depends_target_ASCII_Game
+build CMakeFiles/ASCII_Game.dir/map/Map.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/map/Map.cpp || cmake_object_order_depends_target_ASCII_Game
   DEP_FILE = CMakeFiles\ASCII_Game.dir\map\Map.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ASCII_Game.dir
   OBJECT_FILE_DIR = CMakeFiles\ASCII_Game.dir\map
 
-build CMakeFiles/ASCII_Game.dir/map/Tile.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/map/Tile.cpp || cmake_object_order_depends_target_ASCII_Game
+build CMakeFiles/ASCII_Game.dir/map/Tile.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/map/Tile.cpp || cmake_object_order_depends_target_ASCII_Game
   DEP_FILE = CMakeFiles\ASCII_Game.dir\map\Tile.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ASCII_Game.dir
   OBJECT_FILE_DIR = CMakeFiles\ASCII_Game.dir\map
 
-build CMakeFiles/ASCII_Game.dir/monster/Dragon.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/monster/Dragon.cpp || cmake_object_order_depends_target_ASCII_Game
+build CMakeFiles/ASCII_Game.dir/monster/Dragon.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/monster/Dragon.cpp || cmake_object_order_depends_target_ASCII_Game
   DEP_FILE = CMakeFiles\ASCII_Game.dir\monster\Dragon.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ASCII_Game.dir
   OBJECT_FILE_DIR = CMakeFiles\ASCII_Game.dir\monster
 
-build CMakeFiles/ASCII_Game.dir/monster/Goblin.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/monster/Goblin.cpp || cmake_object_order_depends_target_ASCII_Game
+build CMakeFiles/ASCII_Game.dir/monster/Goblin.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/monster/Goblin.cpp || cmake_object_order_depends_target_ASCII_Game
   DEP_FILE = CMakeFiles\ASCII_Game.dir\monster\Goblin.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ASCII_Game.dir
   OBJECT_FILE_DIR = CMakeFiles\ASCII_Game.dir\monster
 
-build CMakeFiles/ASCII_Game.dir/monster/Monster.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/monster/Monster.cpp || cmake_object_order_depends_target_ASCII_Game
+build CMakeFiles/ASCII_Game.dir/monster/Monster.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/monster/Monster.cpp || cmake_object_order_depends_target_ASCII_Game
   DEP_FILE = CMakeFiles\ASCII_Game.dir\monster\Monster.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ASCII_Game.dir
   OBJECT_FILE_DIR = CMakeFiles\ASCII_Game.dir\monster
 
-build CMakeFiles/ASCII_Game.dir/monster/MonsterFactory.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/monster/MonsterFactory.cpp || cmake_object_order_depends_target_ASCII_Game
+build CMakeFiles/ASCII_Game.dir/monster/MonsterFactory.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/monster/MonsterFactory.cpp || cmake_object_order_depends_target_ASCII_Game
   DEP_FILE = CMakeFiles\ASCII_Game.dir\monster\MonsterFactory.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ASCII_Game.dir
   OBJECT_FILE_DIR = CMakeFiles\ASCII_Game.dir\monster
 
-build CMakeFiles/ASCII_Game.dir/monster/Troll.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/monster/Troll.cpp || cmake_object_order_depends_target_ASCII_Game
+build CMakeFiles/ASCII_Game.dir/monster/Troll.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/monster/Troll.cpp || cmake_object_order_depends_target_ASCII_Game
   DEP_FILE = CMakeFiles\ASCII_Game.dir\monster\Troll.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ASCII_Game.dir
   OBJECT_FILE_DIR = CMakeFiles\ASCII_Game.dir\monster
 
-build CMakeFiles/ASCII_Game.dir/player/Archer.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/player/Archer.cpp || cmake_object_order_depends_target_ASCII_Game
+build CMakeFiles/ASCII_Game.dir/player/Archer.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/player/Archer.cpp || cmake_object_order_depends_target_ASCII_Game
   DEP_FILE = CMakeFiles\ASCII_Game.dir\player\Archer.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ASCII_Game.dir
   OBJECT_FILE_DIR = CMakeFiles\ASCII_Game.dir\player
 
-build CMakeFiles/ASCII_Game.dir/player/Mage.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/player/Mage.cpp || cmake_object_order_depends_target_ASCII_Game
+build CMakeFiles/ASCII_Game.dir/player/Mage.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/player/Mage.cpp || cmake_object_order_depends_target_ASCII_Game
   DEP_FILE = CMakeFiles\ASCII_Game.dir\player\Mage.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ASCII_Game.dir
   OBJECT_FILE_DIR = CMakeFiles\ASCII_Game.dir\player
 
-build CMakeFiles/ASCII_Game.dir/player/Player.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/player/Player.cpp || cmake_object_order_depends_target_ASCII_Game
+build CMakeFiles/ASCII_Game.dir/player/Player.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/player/Player.cpp || cmake_object_order_depends_target_ASCII_Game
   DEP_FILE = CMakeFiles\ASCII_Game.dir\player\Player.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ASCII_Game.dir
   OBJECT_FILE_DIR = CMakeFiles\ASCII_Game.dir\player
 
-build CMakeFiles/ASCII_Game.dir/player/Warrior.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/player/Warrior.cpp || cmake_object_order_depends_target_ASCII_Game
+build CMakeFiles/ASCII_Game.dir/player/Warrior.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/player/Warrior.cpp || cmake_object_order_depends_target_ASCII_Game
   DEP_FILE = CMakeFiles\ASCII_Game.dir\player\Warrior.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ASCII_Game.dir
   OBJECT_FILE_DIR = CMakeFiles\ASCII_Game.dir\player
 
-build CMakeFiles/ASCII_Game.dir/entity/Entity.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/entity/Entity.cpp || cmake_object_order_depends_target_ASCII_Game
+build CMakeFiles/ASCII_Game.dir/entity/Entity.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/entity/Entity.cpp || cmake_object_order_depends_target_ASCII_Game
   DEP_FILE = CMakeFiles\ASCII_Game.dir\entity\Entity.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ASCII_Game.dir
   OBJECT_FILE_DIR = CMakeFiles\ASCII_Game.dir\entity
 
-build CMakeFiles/ASCII_Game.dir/gold/Gold.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/gold/Gold.cpp || cmake_object_order_depends_target_ASCII_Game
+build CMakeFiles/ASCII_Game.dir/gold/Gold.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/gold/Gold.cpp || cmake_object_order_depends_target_ASCII_Game
   DEP_FILE = CMakeFiles\ASCII_Game.dir\gold\Gold.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ASCII_Game.dir
   OBJECT_FILE_DIR = CMakeFiles\ASCII_Game.dir\gold
 
-build CMakeFiles/ASCII_Game.dir/logger/Logger.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/logger/Logger.cpp || cmake_object_order_depends_target_ASCII_Game
+build CMakeFiles/ASCII_Game.dir/logger/Logger.cpp.obj: CXX_COMPILER__ASCII_Game_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ASCII-Game/logger/Logger.cpp || cmake_object_order_depends_target_ASCII_Game
   DEP_FILE = CMakeFiles\ASCII_Game.dir\logger\Logger.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ASCII_Game.dir
   OBJECT_FILE_DIR = CMakeFiles\ASCII_Game.dir\logger
 
@@ -219,9 +219,8 @@ build CMakeFiles/ASCII_Game.dir/logger/Logger.cpp.obj: CXX_COMPILER__ASCII_Game_
 #############################################
 # Link the executable ASCII_Game.exe
 
-build ASCII_Game.exe: CXX_EXECUTABLE_LINKER__ASCII_Game_Release CMakeFiles/ASCII_Game.dir/main.cpp.obj CMakeFiles/ASCII_Game.dir/GameEngine.cpp.obj CMakeFiles/ASCII_Game.dir/Menu.cpp.obj CMakeFiles/ASCII_Game.dir/inventory/Inventory.cpp.obj CMakeFiles/ASCII_Game.dir/item/Armor.cpp.obj CMakeFiles/ASCII_Game.dir/item/Item.cpp.obj CMakeFiles/ASCII_Game.dir/item/ItemFactory.cpp.obj CMakeFiles/ASCII_Game.dir/item/Potion.cpp.obj CMakeFiles/ASCII_Game.dir/item/Weapon.cpp.obj CMakeFiles/ASCII_Game.dir/map/DefaultLocationBuilder.cpp.obj CMakeFiles/ASCII_Game.dir/map/Location.cpp.obj CMakeFiles/ASCII_Game.dir/map/LocationBuilder.cpp.obj CMakeFiles/ASCII_Game.dir/map/LocationDirector.cpp.obj CMakeFiles/ASCII_Game.dir/map/Map.cpp.obj CMakeFiles/ASCII_Game.dir/map/Tile.cpp.obj CMakeFiles/ASCII_Game.dir/monster/Dragon.cpp.obj CMakeFiles/ASCII_Game.dir/monster/Goblin.cpp.obj CMakeFiles/ASCII_Game.dir/monster/Monster.cpp.obj CMakeFiles/ASCII_Game.dir/monster/MonsterFactory.cpp.obj CMakeFiles/ASCII_Game.dir/monster/Troll.cpp.obj CMakeFiles/ASCII_Game.dir/player/Archer.cpp.obj CMakeFiles/ASCII_Game.dir/player/Mage.cpp.obj CMakeFiles/ASCII_Game.dir/player/Player.cpp.obj CMakeFiles/ASCII_Game.dir/player/Warrior.cpp.obj CMakeFiles/ASCII_Game.dir/entity/Entity.cpp.obj CMakeFiles/ASCII_Game.dir/gold/Gold.cpp.obj CMakeFiles/ASCII_Game.dir/logger/Logger.cpp.obj
-  FLAGS = -O3 -DNDEBUG
-  LINK_FLAGS = -static
+build ASCII_Game.exe: CXX_EXECUTABLE_LINKER__ASCII_Game_Debug CMakeFiles/ASCII_Game.dir/main.cpp.obj CMakeFiles/ASCII_Game.dir/GameEngine.cpp.obj CMakeFiles/ASCII_Game.dir/Menu.cpp.obj CMakeFiles/ASCII_Game.dir/inventory/Inventory.cpp.obj CMakeFiles/ASCII_Game.dir/item/Armor.cpp.obj CMakeFiles/ASCII_Game.dir/item/Item.cpp.obj CMakeFiles/ASCII_Game.dir/item/ItemFactory.cpp.obj CMakeFiles/ASCII_Game.dir/item/Potion.cpp.obj CMakeFiles/ASCII_Game.dir/item/Weapon.cpp.obj CMakeFiles/ASCII_Game.dir/map/DefaultLocationBuilder.cpp.obj CMakeFiles/ASCII_Game.dir/map/Location.cpp.obj CMakeFiles/ASCII_Game.dir/map/LocationBuilder.cpp.obj CMakeFiles/ASCII_Game.dir/map/LocationDirector.cpp.obj CMakeFiles/ASCII_Game.dir/map/Map.cpp.obj CMakeFiles/ASCII_Game.dir/map/Tile.cpp.obj CMakeFiles/ASCII_Game.dir/monster/Dragon.cpp.obj CMakeFiles/ASCII_Game.dir/monster/Goblin.cpp.obj CMakeFiles/ASCII_Game.dir/monster/Monster.cpp.obj CMakeFiles/ASCII_Game.dir/monster/MonsterFactory.cpp.obj CMakeFiles/ASCII_Game.dir/monster/Troll.cpp.obj CMakeFiles/ASCII_Game.dir/player/Archer.cpp.obj CMakeFiles/ASCII_Game.dir/player/Mage.cpp.obj CMakeFiles/ASCII_Game.dir/player/Player.cpp.obj CMakeFiles/ASCII_Game.dir/player/Warrior.cpp.obj CMakeFiles/ASCII_Game.dir/entity/Entity.cpp.obj CMakeFiles/ASCII_Game.dir/gold/Gold.cpp.obj CMakeFiles/ASCII_Game.dir/logger/Logger.cpp.obj
+  FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\ASCII_Game.dir
   POST_BUILD = cd .

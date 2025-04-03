@@ -1,3 +1,150 @@
-[Info: 2024-06-27 16:37:30.918995] Starting game...
-[Info: 2024-06-27 16:37:30.926764] Creating Menu instance.
-[Info: 2024-06-27 16:37:32.824819] Destroying Menu instance.
+[Info: 2024-07-05 12:29:20.548850] Starting game...
+[Info: 2024-07-05 12:29:20.553359] Creating Menu instance.
+[Info: 2024-07-05 12:29:21.076352] Creating new game.
+[Info: 2024-07-05 12:29:21.076543] Creating GameEngine object.
+[Info: 2024-07-05 12:29:21.076686] Creating DefaultLocationBuilder instance.
+[Info: 2024-07-05 12:29:21.076808] Creating location with name: Default Location.
+[Info: 2024-07-05 12:29:21.076908] Creating LocationDirector instance.
+[Info: 2024-07-05 12:29:21.077012] Creating Map instance.
+[Info: 2024-07-05 12:29:21.077114] Creating DefaultLocationBuilder instance.
+[Info: 2024-07-05 12:29:21.077217] Creating location with name: Default Location.
+[Info: 2024-07-05 12:29:21.077309] Creating LocationDirector instance.
+[Info: 2024-07-05 12:29:21.085488] Destroying LocationDirector instance.
+[Info: 2024-07-05 12:29:21.951234] Created map with name: ef
+[Info: 2024-07-05 12:29:21.951644] Creating tiles.
+[Info: 2024-07-05 12:29:22.080286] Creating Item entity.
+[Info: 2024-07-05 12:29:22.081219] Creating Monster entity.
+[Info: 2024-07-05 12:29:22.081501] Creating Monster entity.
+[Info: 2024-07-05 12:29:22.465434] Creating Mage entity.
+[Info: 2024-07-05 12:29:22.465839] Creating Item entity.
+[Info: 2024-07-05 12:29:22.466180] Creating Item entity.
+[Info: 2024-07-05 12:29:22.466495] Player created as: Mage
+[Info: 2024-07-05 12:29:22.468554] Creating Inventory instance.
+[Info: 2024-07-05 12:29:22.468946] Game ef saving.
+[Info: 2024-07-05 12:29:22.471988] Saving Map instance to file.
+[Info: 2024-07-05 12:29:22.472487] Saving location: Default Location.
+[Info: 2024-07-05 12:29:22.472982] Saving Dragon entity to file
+[Info: 2024-07-05 12:29:22.473474] Saving Troll entity to file
+[Info: 2024-07-05 12:29:22.473950] Saving Mage entity to file
+[Info: 2024-07-05 12:29:22.474379] Saving Armor entity to file
+[Info: 2024-07-05 12:29:22.474806] Saving Weapon entity to file
+[Info: 2024-07-05 12:29:22.475235] Saving Potion entity to file
+[Info: 2024-07-05 12:29:22.475685] Saving Inventory instance to file.
+[Info: 2024-07-05 12:29:22.477919] Game ef saved.
+[Info: 2024-07-05 12:29:22.478597] Game started.
+[Info: 2024-07-05 12:29:24.203610] Game ef saving.
+[Info: 2024-07-05 12:29:24.204977] Saving Map instance to file.
+[Info: 2024-07-05 12:29:24.205163] Saving location: Default Location.
+[Info: 2024-07-05 12:29:24.205319] Saving Dragon entity to file
+[Info: 2024-07-05 12:29:24.205482] Saving Troll entity to file
+[Info: 2024-07-05 12:29:24.205646] Saving Mage entity to file
+[Info: 2024-07-05 12:29:24.205807] Saving Armor entity to file
+[Info: 2024-07-05 12:29:24.206012] Saving Weapon entity to file
+[Info: 2024-07-05 12:29:24.206196] Saving Potion entity to file
+[Info: 2024-07-05 12:29:24.206403] Saving Inventory instance to file.
+[Info: 2024-07-05 12:29:24.207224] Game ef saved.
+[Info: 2024-07-05 12:29:24.545260] Creating new game.
+[Info: 2024-07-05 12:29:25.296163] Created map with name: ef
+[Info: 2024-07-05 12:29:25.296846] Creating tiles.
+[Info: 2024-07-05 12:29:25.299257] Creating Gold object.
+[Info: 2024-07-05 12:29:25.300528] Creating Item entity.
+[Info: 2024-07-05 12:29:25.300761] Creating Item entity.
+[Info: 2024-07-05 12:29:25.302145] Creating Monster entity.
+[Info: 2024-07-05 12:29:25.302338] Creating Monster entity.
+[Info: 2024-07-05 12:29:25.302527] Creating Monster entity.
+[Info: 2024-07-05 12:29:25.302717] Creating Monster entity.
+[Info: 2024-07-05 12:29:25.582213] Creating Mage entity.
+[Info: 2024-07-05 12:29:25.582564] Creating Item entity.
+[Info: 2024-07-05 12:29:25.582793] Creating Item entity.
+[Info: 2024-07-05 12:29:25.583013] Player created as: Mage
+[Info: 2024-07-05 12:29:25.584839] Game ef saving.
+[Info: 2024-07-05 12:29:25.587484] Saving Map instance to file.
+[Info: 2024-07-05 12:29:25.587815] Saving location: Default Location.
+[Info: 2024-07-05 12:29:25.588079] Saving Dragon entity to file
+[Info: 2024-07-05 12:29:25.588272] Saving Troll entity to file
+[Info: 2024-07-05 12:29:25.588468] Saving Mage entity to file
+[Info: 2024-07-05 12:29:25.588691] Saving Armor entity to file
+[Info: 2024-07-05 12:29:25.588987] Saving Weapon entity to file
+[Info: 2024-07-05 12:29:25.589199] Saving Potion entity to file
+[Info: 2024-07-05 12:29:25.589402] Saving location: Default Location.
+[Info: 2024-07-05 12:29:25.589660] Saving Troll entity to file
+[Info: 2024-07-05 12:29:25.589850] Saving Weapon entity to file
+[Info: 2024-07-05 12:29:25.590050] Saving Gold entity to file.
+[Info: 2024-07-05 12:29:25.590241] Saving Mage entity to file
+[Info: 2024-07-05 12:29:25.590429] Saving Armor entity to file
+[Info: 2024-07-05 12:29:25.590617] Saving Weapon entity to file
+[Info: 2024-07-05 12:29:25.590809] Saving Armor entity to file
+[Info: 2024-07-05 12:29:25.590998] Saving Dragon entity to file
+[Info: 2024-07-05 12:29:25.591190] Saving Troll entity to file
+[Info: 2024-07-05 12:29:25.591386] Saving Inventory instance to file.
+[Info: 2024-07-05 12:29:25.595128] Game ef saved.
+[Info: 2024-07-05 12:29:25.595704] Game started.
+[Info: 2024-07-05 12:29:26.506990] Moving from (4, 4) to (3, 4).
+[Info: 2024-07-05 12:29:26.699489] Moving from (3, 4) to (2, 4).
+[Info: 2024-07-05 12:29:26.897646] Moving from (2, 4) to (1, 4).
+[Info: 2024-07-05 12:29:27.110159] Moving from (1, 4) to (0, 4).
+[Info: 2024-07-05 12:29:27.461364] Moving from (0, 4) to (0, 4).
+[Info: 2024-07-05 12:29:27.461542] Creating tiles.
+[Info: 2024-07-05 12:29:27.462570] Creating Gold object.
+[Info: 2024-07-05 12:29:27.463282] Creating Item entity.
+[Info: 2024-07-05 12:29:27.463361] Creating Item entity.
+[Info: 2024-07-05 12:29:27.463435] Creating Item entity.
+[Info: 2024-07-05 12:29:27.464299] Creating Monster entity.
+[Info: 2024-07-05 12:29:27.464376] Creating Monster entity.
+[Info: 2024-07-05 12:29:27.464451] Creating Monster entity.
+[Info: 2024-07-05 12:29:27.464526] Creating Monster entity.
+[Info: 2024-07-05 12:29:27.464606] Creating Monster entity.
+[Info: 2024-07-05 12:29:27.464683] Creating Monster entity.
+[Info: 2024-07-05 12:30:43.818511] Game ef saving.
+[Info: 2024-07-05 12:30:43.823028] Saving Map instance to file.
+[Info: 2024-07-05 12:30:43.823894] Saving location: Default Location.
+[Info: 2024-07-05 12:30:43.824539] Saving Dragon entity to file
+[Info: 2024-07-05 12:30:43.825540] Saving Troll entity to file
+[Info: 2024-07-05 12:30:43.826321] Saving Mage entity to file
+[Info: 2024-07-05 12:30:43.827468] Saving Armor entity to file
+[Info: 2024-07-05 12:30:43.828322] Saving Weapon entity to file
+[Info: 2024-07-05 12:30:43.829106] Saving Potion entity to file
+[Info: 2024-07-05 12:30:43.829956] Saving location: Default Location.
+[Info: 2024-07-05 12:30:43.830693] Saving Troll entity to file
+[Info: 2024-07-05 12:30:43.831751] Saving Weapon entity to file
+[Info: 2024-07-05 12:30:43.832466] Saving Gold entity to file.
+[Info: 2024-07-05 12:30:43.833526] Saving Armor entity to file
+[Info: 2024-07-05 12:30:43.834888] Saving Dragon entity to file
+[Info: 2024-07-05 12:30:43.836154] Saving Troll entity to file
+[Info: 2024-07-05 12:30:43.837106] Saving location: Default Location.
+[Info: 2024-07-05 12:30:43.837825] Saving Troll entity to file
+[Info: 2024-07-05 12:30:43.838479] Saving Troll entity to file
+[Info: 2024-07-05 12:30:43.839153] Saving Troll entity to file
+[Info: 2024-07-05 12:30:43.839791] Saving Weapon entity to file
+[Info: 2024-07-05 12:30:43.840451] Saving Troll entity to file
+[Info: 2024-07-05 12:30:43.841112] Saving Dragon entity to file
+[Info: 2024-07-05 12:30:43.841758] Saving Potion entity to file
+[Info: 2024-07-05 12:30:43.842398] Saving Dragon entity to file
+[Info: 2024-07-05 12:30:43.843032] Saving Armor entity to file
+[Info: 2024-07-05 12:30:43.843644] Saving Mage entity to file
+[Info: 2024-07-05 12:30:43.844273] Saving Armor entity to file
+[Info: 2024-07-05 12:30:43.844883] Saving Weapon entity to file
+[Info: 2024-07-05 12:30:43.845568] Saving Inventory instance to file.
+[Info: 2024-07-05 12:30:43.850071] Game ef saved.
+[Info: 2024-07-05 12:30:43.853561] Moving from (8, 8) to (7, 8).
+[Info: 2024-07-05 12:30:47.811278] Moving from (7, 8) to (6, 8).
+[Info: 2024-07-05 12:30:48.111948] Moving from (6, 8) to (6, 7).
+[Info: 2024-07-05 12:30:48.326993] Moving from (6, 7) to (6, 6).
+[Info: 2024-07-05 12:30:48.502719] Moving from (6, 6) to (6, 5).
+[Info: 2024-07-05 12:30:48.685666] Moving from (6, 5) to (6, 4).
+[Info: 2024-07-05 12:30:48.866540] Moving from (6, 4) to (6, 3).
+[Info: 2024-07-05 12:30:49.031277] Moving from (6, 3) to (6, 2).
+[Info: 2024-07-05 12:30:49.223527] Moving from (6, 2) to (6, 1).
+[Info: 2024-07-05 12:30:49.483596] Moving from (6, 1) to (5, 1).
+[Info: 2024-07-05 12:30:49.754982] Moving from (5, 1) to (5, 0).
+[Info: 2024-07-05 12:30:50.266984] Moving from (5, 0) to (5, 0).
+[Info: 2024-07-05 12:30:50.267308] Creating tiles.
+[Info: 2024-07-05 12:30:50.268614] Creating Gold object.
+[Info: 2024-07-05 12:30:50.269303] Creating Item entity.
+[Info: 2024-07-05 12:30:50.269376] Creating Item entity.
+[Info: 2024-07-05 12:30:50.269451] Creating Item entity.
+[Info: 2024-07-05 12:30:50.270230] Creating Monster entity.
+[Info: 2024-07-05 12:30:50.270302] Creating Monster entity.
+[Info: 2024-07-05 12:30:50.270372] Creating Monster entity.
+[Info: 2024-07-05 12:30:50.270441] Creating Monster entity.
+[Info: 2024-07-05 12:30:50.270522] Creating Monster entity.

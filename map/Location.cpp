@@ -168,43 +168,36 @@ std::pair<int, int> Location::getOppositeSidePosition(int x, int y, const Locati
             for (int i = 0; i < newLocation->m_width; ++i) {
                 if (newLocation->m_tiles[newX][i]->isPassable() && newLocation->m_tiles[newX][i]->getSymbol() != '#') {
                     newY = i;
-                    break;
+                    return std::make_pair(newX, newY);
                 }
             }
-            break;
 
         case Top:
             newX = 0;
             for (int i = 0; i < newLocation->m_width; ++i) {
                 if (newLocation->m_tiles[newX][i]->isPassable() && newLocation->m_tiles[newX][i]->getSymbol() != '#') {
                     newY = i;
-                    break;
+                    return std::make_pair(newX, newY);
                 }
             }
-            break;
 
         case Right:
             newY = newLocation->m_width - 1;
             for (int i = 0; i < newLocation->m_height; ++i) {
                 if (newLocation->m_tiles[i][newY]->isPassable() && newLocation->m_tiles[i][newY]->getSymbol() != '#') {
                     newX = i;
-                    break;
+                    return std::make_pair(newX, newY);
                 }
             }
-            break;
 
         case Left:
             newY = 0;
             for (int i = 0; i < newLocation->m_height; ++i) {
                 if (newLocation->m_tiles[i][newY]->isPassable() && newLocation->m_tiles[i][newY]->getSymbol() != '#') {
                     newX = i;
-                    break;
+                    return std::make_pair(newX, newY);
                 }
             }
-            break;
-
-        default:
-            return std::make_pair(x, y);
     }
 
     return std::make_pair(newX, newY);
