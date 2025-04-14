@@ -12,7 +12,7 @@
 
 int main() {
     LOG_INFO("Starting game...");
-    SetConsoleTitle("ASCII Game");
+    SetConsoleTitle("ElderGlyph");
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     if (hConsole == INVALID_HANDLE_VALUE) {
         std::cerr << RED_TEXT << "Error: Unable to get hConsole handle\n" << RESET_TEXT;

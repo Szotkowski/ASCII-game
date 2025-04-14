@@ -1,5 +1,5 @@
-cmake_minimum_required(VERSION 3.28)
-project(ASCII_Game)
+cmake_minimum_required(VERSION 3.27.8)
+project(ElderGlyph)
 
 set(CMAKE_CXX_STANDARD 26)
 
@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD 26)
 
 #set(CMAKE_EXE_LINKER_FLAGS "-static")
 
-add_executable(ASCII_Game main.cpp
+add_executable(ElderGlyph main.cpp
         GameEngine.cpp
         GameEngine.h
         Menu.cpp
