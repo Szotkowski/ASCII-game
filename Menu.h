@@ -15,7 +15,7 @@ private:
 
     ~Menu();
 
-    static const std::string options[4];
+    static const std::string options[5];
 
     static const int numOptions;
 

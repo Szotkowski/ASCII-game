@@ -18,6 +18,9 @@ void GameEngine::gameLoop() {
     while (true) {
         if (_kbhit()) {
             char input = static_cast<char>(_getch());
+            if (input == -32) {  // Detect special key sequences
+                input = static_cast<char>(_getch());  // Read the actual key code
+            }
             if (handlePlayerInput(input)) {
                 Map::getInstance().displayCurrentMap();
             }
@@ -28,6 +31,11 @@ void GameEngine::gameLoop() {
 bool GameEngine::handlePlayerInput(char input) {
     bool shouldRedrawMap;
     Player* player = Map::getInstance().getCurrentLocation()->getPlayer();
+    if (player == nullptr) {
+        std::cerr << RED_TEXT << "Player not found." << RESET_TEXT << std::endl;
+        LOG_ERROR("Player not found.");
+        return false;
+    }
     switch (input) {
     case 'w':
     case 'W':

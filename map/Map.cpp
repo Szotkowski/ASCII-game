@@ -126,14 +126,26 @@ Location* Map::createNewLocation(bool first) {
         Player* player = getInstance().getCurrentLocation()->getPlayer();
         Side doorSide = getInstance().getCurrentLocation()->getSideFromPosition(player->getX(), player->getY());
         Location* newLocation = m_locationDirector.buildLocation(doorSide);
+        for (const auto& row : newLocation->getTiles()) {
+            for (const auto& tile : row) {
+                std::cout << tile->getSymbol() << " ";
+            }
+            std::cout << std::endl;
+        }
         m_locations.push_back(newLocation);
 
         // Add destination to current location
         m_currentLocation->addDestination(std::to_string(player->getX()) + "," + std::to_string(player->getY()), m_locations.size() - 1);
 
         // Move player to the opposite side
-        std::pair<int, int> oppositeSidePosition = m_currentLocation->getOppositeSidePosition(player->getX(), player->getY(), newLocation);
+        std::pair<int, int> oppositeSidePosition = m_currentLocation->getOppositeSidePosition(player->getX(), player->getY(), m_locations.back());
         m_currentLocation->setTile(player->getX(), player->getY(), new Tile(' ', true));
+        for (const auto& row : m_currentLocation->getTiles()) {
+            for (const auto& tile : row) {
+                std::cout << tile->getSymbol() << " ";
+            }
+            std::cout << std::endl;
+        }
         player->setXY(oppositeSidePosition);
 
         // Add destination to the new location
@@ -142,7 +154,12 @@ Location* Map::createNewLocation(bool first) {
 
         // Set player's tile in the new location
         m_locations.back()->setTile(player->getX(), player->getY(), new Tile(player->getPlayerSymbol(), false, player));
-
+        for (const auto& row : newLocation->getTiles()) {
+            for (const auto& tile : row) {
+                std::cout << tile->getSymbol() << " ";
+            }
+            std::cout << std::endl;
+        }
         // Update current location
         m_currentLocation = newLocation;
         return newLocation;

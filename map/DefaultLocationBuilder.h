@@ -6,6 +6,8 @@
 #define NEW_PROJEKT_ZOO_DEFAULTLOCATIONBUILDER_H
 
 #include <algorithm>
+#include <random>
+#include <set>
 #include "LocationBuilder.h"
 #include "Location.h"
 #include "../monster/Monster.h"

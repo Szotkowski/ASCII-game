@@ -4,8 +4,6 @@
 
 #include "DefaultLocationBuilder.h"
 
-#include <random>
-
 DefaultLocationBuilder::DefaultLocationBuilder() {
     LOG_INFO("Creating DefaultLocationBuilder instance.");
     m_location = new Location("Default Location");
@@ -51,106 +49,66 @@ void DefaultLocationBuilder::setDoors(Side doorSide) {
     int width = m_location->getTiles().size();
     int height = m_location->getTiles()[0].size();
     std::vector<std::vector<Tile*>> tiles = m_location->getTiles();
-    bool doorPlaced = false;
+    std::set<Side> doorSides;
 
     // Place the door on the specified side
     switch (doorSide) {
         case Side::Left: {
             int x = rand() % (width - 2) + 1; // Avoid corners
             tiles[x][0] = new Tile(' ', true);
-            doorPlaced = true;
+            doorSides.insert(Side::Left);
             break;
         }
         case Side::Right: {
             int x = rand() % (width - 2) + 1; // Avoid corners
             tiles[x][height - 1] = new Tile(' ', true);
-            doorPlaced = true;
+            doorSides.insert(Side::Right);
             break;
         }
         case Side::Top: {
             int y = rand() % (height - 2) + 1; // Avoid corners
             tiles[0][y] = new Tile(' ', true);
-            doorPlaced = true;
+            doorSides.insert(Side::Top);
             break;
         }
         case Side::Bottom: {
             int y = rand() % (height - 2) + 1; // Avoid corners
             tiles[width - 1][y] = new Tile(' ', true);
-            doorPlaced = true;
-            break;
-        }
-        case Side::Random: {
-            // Randomly choose a side if Random is specified
-            int side = rand() % 4;
-            switch (side) {
-                case 0: { // Top
-                    int x = rand() % (width - 2) + 1;
-                    tiles[x][0] = new Tile(' ', true);
-                    break;
-                }
-                case 1: { // Bottom
-                    int x = rand() % (width - 2) + 1;
-                    tiles[x][height - 1] = new Tile(' ', true);
-                    break;
-                }
-                case 2: { // Left
-                    int y = rand() % (height - 2) + 1;
-                    tiles[0][y] = new Tile(' ', true);
-                    break;
-                }
-                case 3: { // Right
-                    int y = rand() % (height - 2) + 1;
-                    tiles[width - 1][y] = new Tile(' ', true);
-                    break;
-                }
-            }
-            doorPlaced = true;
+            doorSides.insert(Side::Bottom);
             break;
         }
     }
 
-    // Place an additional door on a different random side if only one door was placed
-    int additionalSide = rand() % 4;
-    while (true) {
-        int newX, newY;
+    // Place an additional door on a different random side if needed
+    if (doorSides.size() <= 2) {
+        Side additionalSide;
+        do {
+            additionalSide = static_cast<Side>(rand() % 4);
+        } while (doorSides.count(additionalSide) > 0);
+
         switch (additionalSide) {
-            case 0: { // Top
-                newX = rand() % (width - 2) + 1;
-                if (tiles[newX][0]->getSymbol() != ' ') {
-                    tiles[newX][0] = new Tile(' ', true);
-                    doorPlaced = true;
-                }
+            case Side::Top: {
+                int y = rand() % (height - 2) + 1; // Avoid corners
+                tiles[0][y] = new Tile(' ', true);
                 break;
             }
-            case 1: { // Bottom
-                newX = rand() % (width - 2) + 1;
-                if (tiles[newX][height - 1]->getSymbol() != ' ') {
-                    tiles[newX][height - 1] = new Tile(' ', true);
-                    doorPlaced = true;
-                }
+            case Side::Bottom: {
+                int y = rand() % (height - 2) + 1; // Avoid corners
+                tiles[width - 1][y] = new Tile(' ', true);
                 break;
             }
-            case 2: { // Left
-                newY = rand() % (height - 2) + 1;
-                if (tiles[0][newY]->getSymbol() != ' ') {
-                    tiles[0][newY] = new Tile(' ', true);
-                    doorPlaced = true;
-                }
+            case Side::Left: {
+                int x = rand() % (width - 2) + 1; // Avoid corners
+                tiles[x][0] = new Tile(' ', true);
                 break;
             }
-            case 3: { // Right
-                newY = rand() % (height - 2) + 1;
-                if (tiles[width - 1][newY]->getSymbol() != ' ') {
-                    tiles[width - 1][newY] = new Tile(' ', true);
-                    doorPlaced = true;
-                }
+            case Side::Right: {
+                int x = rand() % (width - 2) + 1; // Avoid corners
+                tiles[x][height - 1] = new Tile(' ', true);
                 break;
             }
         }
-        if (doorPlaced) break;
-        additionalSide = (additionalSide + 1) % 4;
     }
-
     m_location->setTile(tiles);
 }
 
@@ -283,6 +241,8 @@ void DefaultLocationBuilder::setPlayer() {
 
     Player* player = Player::createPlayer();
     LOG_INFO("Player created as: " + player->getPlayerTypeString());
+    std::cout << x << y;
+    std::cout << m_location->getTiles()[x][y]->getSymbol();
     player->setXY(std::make_pair(x, y));
     m_location->setTile(x, y, new Tile(player->getPlayerSymbol(), false, player));
 }
