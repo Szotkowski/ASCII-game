@@ -12,7 +12,7 @@
 
 # =============================================================================
 # Project: ElderGlyph
-# Configurations: Debug
+# Configurations: Release
 # =============================================================================
 
 #############################################
@@ -24,7 +24,7 @@ ninja_required_version = 1.5
 #############################################
 # Set configuration variable for custom commands.
 
-CONFIGURATION = Debug
+CONFIGURATION = Release
 # =============================================================================
 # Include auxiliary files.
 
@@ -49,167 +49,178 @@ cmake_ninja_workdir = C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/cma
 
 build cmake_object_order_depends_target_ElderGlyph: phony || CMakeFiles/ElderGlyph.dir
 
-build CMakeFiles/ElderGlyph.dir/main.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/main.cpp || cmake_object_order_depends_target_ElderGlyph
+build CMakeFiles/ElderGlyph.dir/main.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/main.cpp || cmake_object_order_depends_target_ElderGlyph
   DEP_FILE = CMakeFiles\ElderGlyph.dir\main.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ElderGlyph.dir
   OBJECT_FILE_DIR = CMakeFiles\ElderGlyph.dir
 
-build CMakeFiles/ElderGlyph.dir/GameEngine.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/GameEngine.cpp || cmake_object_order_depends_target_ElderGlyph
+build CMakeFiles/ElderGlyph.dir/GameEngine.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/GameEngine.cpp || cmake_object_order_depends_target_ElderGlyph
   DEP_FILE = CMakeFiles\ElderGlyph.dir\GameEngine.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ElderGlyph.dir
   OBJECT_FILE_DIR = CMakeFiles\ElderGlyph.dir
 
-build CMakeFiles/ElderGlyph.dir/Menu.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/Menu.cpp || cmake_object_order_depends_target_ElderGlyph
+build CMakeFiles/ElderGlyph.dir/Menu.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/Menu.cpp || cmake_object_order_depends_target_ElderGlyph
   DEP_FILE = CMakeFiles\ElderGlyph.dir\Menu.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ElderGlyph.dir
   OBJECT_FILE_DIR = CMakeFiles\ElderGlyph.dir
 
-build CMakeFiles/ElderGlyph.dir/inventory/Inventory.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/inventory/Inventory.cpp || cmake_object_order_depends_target_ElderGlyph
+build CMakeFiles/ElderGlyph.dir/inventory/Inventory.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/inventory/Inventory.cpp || cmake_object_order_depends_target_ElderGlyph
   DEP_FILE = CMakeFiles\ElderGlyph.dir\inventory\Inventory.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ElderGlyph.dir
   OBJECT_FILE_DIR = CMakeFiles\ElderGlyph.dir\inventory
 
-build CMakeFiles/ElderGlyph.dir/item/Armor.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/item/Armor.cpp || cmake_object_order_depends_target_ElderGlyph
+build CMakeFiles/ElderGlyph.dir/item/Armor.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/item/Armor.cpp || cmake_object_order_depends_target_ElderGlyph
   DEP_FILE = CMakeFiles\ElderGlyph.dir\item\Armor.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ElderGlyph.dir
   OBJECT_FILE_DIR = CMakeFiles\ElderGlyph.dir\item
 
-build CMakeFiles/ElderGlyph.dir/item/Item.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/item/Item.cpp || cmake_object_order_depends_target_ElderGlyph
+build CMakeFiles/ElderGlyph.dir/item/Item.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/item/Item.cpp || cmake_object_order_depends_target_ElderGlyph
   DEP_FILE = CMakeFiles\ElderGlyph.dir\item\Item.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ElderGlyph.dir
   OBJECT_FILE_DIR = CMakeFiles\ElderGlyph.dir\item
 
-build CMakeFiles/ElderGlyph.dir/item/ItemFactory.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/item/ItemFactory.cpp || cmake_object_order_depends_target_ElderGlyph
+build CMakeFiles/ElderGlyph.dir/item/ItemFactory.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/item/ItemFactory.cpp || cmake_object_order_depends_target_ElderGlyph
   DEP_FILE = CMakeFiles\ElderGlyph.dir\item\ItemFactory.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ElderGlyph.dir
   OBJECT_FILE_DIR = CMakeFiles\ElderGlyph.dir\item
 
-build CMakeFiles/ElderGlyph.dir/item/Potion.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/item/Potion.cpp || cmake_object_order_depends_target_ElderGlyph
+build CMakeFiles/ElderGlyph.dir/item/Potion.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/item/Potion.cpp || cmake_object_order_depends_target_ElderGlyph
   DEP_FILE = CMakeFiles\ElderGlyph.dir\item\Potion.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ElderGlyph.dir
   OBJECT_FILE_DIR = CMakeFiles\ElderGlyph.dir\item
 
-build CMakeFiles/ElderGlyph.dir/item/Weapon.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/item/Weapon.cpp || cmake_object_order_depends_target_ElderGlyph
+build CMakeFiles/ElderGlyph.dir/item/Weapon.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/item/Weapon.cpp || cmake_object_order_depends_target_ElderGlyph
   DEP_FILE = CMakeFiles\ElderGlyph.dir\item\Weapon.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ElderGlyph.dir
   OBJECT_FILE_DIR = CMakeFiles\ElderGlyph.dir\item
 
-build CMakeFiles/ElderGlyph.dir/map/DefaultLocationBuilder.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/map/DefaultLocationBuilder.cpp || cmake_object_order_depends_target_ElderGlyph
+build CMakeFiles/ElderGlyph.dir/map/DefaultLocationBuilder.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/map/DefaultLocationBuilder.cpp || cmake_object_order_depends_target_ElderGlyph
   DEP_FILE = CMakeFiles\ElderGlyph.dir\map\DefaultLocationBuilder.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ElderGlyph.dir
   OBJECT_FILE_DIR = CMakeFiles\ElderGlyph.dir\map
 
-build CMakeFiles/ElderGlyph.dir/map/Location.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/map/Location.cpp || cmake_object_order_depends_target_ElderGlyph
+build CMakeFiles/ElderGlyph.dir/map/Location.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/map/Location.cpp || cmake_object_order_depends_target_ElderGlyph
   DEP_FILE = CMakeFiles\ElderGlyph.dir\map\Location.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ElderGlyph.dir
   OBJECT_FILE_DIR = CMakeFiles\ElderGlyph.dir\map
 
-build CMakeFiles/ElderGlyph.dir/map/LocationBuilder.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/map/LocationBuilder.cpp || cmake_object_order_depends_target_ElderGlyph
+build CMakeFiles/ElderGlyph.dir/map/LocationBuilder.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/map/LocationBuilder.cpp || cmake_object_order_depends_target_ElderGlyph
   DEP_FILE = CMakeFiles\ElderGlyph.dir\map\LocationBuilder.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ElderGlyph.dir
   OBJECT_FILE_DIR = CMakeFiles\ElderGlyph.dir\map
 
-build CMakeFiles/ElderGlyph.dir/map/LocationDirector.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/map/LocationDirector.cpp || cmake_object_order_depends_target_ElderGlyph
+build CMakeFiles/ElderGlyph.dir/map/LocationDirector.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/map/LocationDirector.cpp || cmake_object_order_depends_target_ElderGlyph
   DEP_FILE = CMakeFiles\ElderGlyph.dir\map\LocationDirector.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ElderGlyph.dir
   OBJECT_FILE_DIR = CMakeFiles\ElderGlyph.dir\map
 
-build CMakeFiles/ElderGlyph.dir/map/Map.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/map/Map.cpp || cmake_object_order_depends_target_ElderGlyph
+build CMakeFiles/ElderGlyph.dir/map/Map.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/map/Map.cpp || cmake_object_order_depends_target_ElderGlyph
   DEP_FILE = CMakeFiles\ElderGlyph.dir\map\Map.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ElderGlyph.dir
   OBJECT_FILE_DIR = CMakeFiles\ElderGlyph.dir\map
 
-build CMakeFiles/ElderGlyph.dir/map/Tile.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/map/Tile.cpp || cmake_object_order_depends_target_ElderGlyph
+build CMakeFiles/ElderGlyph.dir/map/Tile.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/map/Tile.cpp || cmake_object_order_depends_target_ElderGlyph
   DEP_FILE = CMakeFiles\ElderGlyph.dir\map\Tile.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ElderGlyph.dir
   OBJECT_FILE_DIR = CMakeFiles\ElderGlyph.dir\map
 
-build CMakeFiles/ElderGlyph.dir/monster/Dragon.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/monster/Dragon.cpp || cmake_object_order_depends_target_ElderGlyph
+build CMakeFiles/ElderGlyph.dir/monster/Dragon.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/monster/Dragon.cpp || cmake_object_order_depends_target_ElderGlyph
   DEP_FILE = CMakeFiles\ElderGlyph.dir\monster\Dragon.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ElderGlyph.dir
   OBJECT_FILE_DIR = CMakeFiles\ElderGlyph.dir\monster
 
-build CMakeFiles/ElderGlyph.dir/monster/Goblin.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/monster/Goblin.cpp || cmake_object_order_depends_target_ElderGlyph
+build CMakeFiles/ElderGlyph.dir/monster/Goblin.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/monster/Goblin.cpp || cmake_object_order_depends_target_ElderGlyph
   DEP_FILE = CMakeFiles\ElderGlyph.dir\monster\Goblin.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ElderGlyph.dir
   OBJECT_FILE_DIR = CMakeFiles\ElderGlyph.dir\monster
 
-build CMakeFiles/ElderGlyph.dir/monster/Monster.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/monster/Monster.cpp || cmake_object_order_depends_target_ElderGlyph
+build CMakeFiles/ElderGlyph.dir/monster/Monster.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/monster/Monster.cpp || cmake_object_order_depends_target_ElderGlyph
   DEP_FILE = CMakeFiles\ElderGlyph.dir\monster\Monster.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ElderGlyph.dir
   OBJECT_FILE_DIR = CMakeFiles\ElderGlyph.dir\monster
 
-build CMakeFiles/ElderGlyph.dir/monster/MonsterFactory.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/monster/MonsterFactory.cpp || cmake_object_order_depends_target_ElderGlyph
+build CMakeFiles/ElderGlyph.dir/monster/MonsterFactory.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/monster/MonsterFactory.cpp || cmake_object_order_depends_target_ElderGlyph
   DEP_FILE = CMakeFiles\ElderGlyph.dir\monster\MonsterFactory.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ElderGlyph.dir
   OBJECT_FILE_DIR = CMakeFiles\ElderGlyph.dir\monster
 
-build CMakeFiles/ElderGlyph.dir/monster/Troll.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/monster/Troll.cpp || cmake_object_order_depends_target_ElderGlyph
+build CMakeFiles/ElderGlyph.dir/monster/Troll.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/monster/Troll.cpp || cmake_object_order_depends_target_ElderGlyph
   DEP_FILE = CMakeFiles\ElderGlyph.dir\monster\Troll.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ElderGlyph.dir
   OBJECT_FILE_DIR = CMakeFiles\ElderGlyph.dir\monster
 
-build CMakeFiles/ElderGlyph.dir/player/Archer.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/player/Archer.cpp || cmake_object_order_depends_target_ElderGlyph
+build CMakeFiles/ElderGlyph.dir/player/Archer.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/player/Archer.cpp || cmake_object_order_depends_target_ElderGlyph
   DEP_FILE = CMakeFiles\ElderGlyph.dir\player\Archer.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ElderGlyph.dir
   OBJECT_FILE_DIR = CMakeFiles\ElderGlyph.dir\player
 
-build CMakeFiles/ElderGlyph.dir/player/Mage.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/player/Mage.cpp || cmake_object_order_depends_target_ElderGlyph
+build CMakeFiles/ElderGlyph.dir/player/Mage.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/player/Mage.cpp || cmake_object_order_depends_target_ElderGlyph
   DEP_FILE = CMakeFiles\ElderGlyph.dir\player\Mage.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ElderGlyph.dir
   OBJECT_FILE_DIR = CMakeFiles\ElderGlyph.dir\player
 
-build CMakeFiles/ElderGlyph.dir/player/Player.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/player/Player.cpp || cmake_object_order_depends_target_ElderGlyph
+build CMakeFiles/ElderGlyph.dir/player/Player.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/player/Player.cpp || cmake_object_order_depends_target_ElderGlyph
   DEP_FILE = CMakeFiles\ElderGlyph.dir\player\Player.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ElderGlyph.dir
   OBJECT_FILE_DIR = CMakeFiles\ElderGlyph.dir\player
 
-build CMakeFiles/ElderGlyph.dir/player/Warrior.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/player/Warrior.cpp || cmake_object_order_depends_target_ElderGlyph
+build CMakeFiles/ElderGlyph.dir/player/Warrior.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/player/Warrior.cpp || cmake_object_order_depends_target_ElderGlyph
   DEP_FILE = CMakeFiles\ElderGlyph.dir\player\Warrior.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ElderGlyph.dir
   OBJECT_FILE_DIR = CMakeFiles\ElderGlyph.dir\player
 
-build CMakeFiles/ElderGlyph.dir/entity/Entity.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/entity/Entity.cpp || cmake_object_order_depends_target_ElderGlyph
+build CMakeFiles/ElderGlyph.dir/entity/Entity.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/entity/Entity.cpp || cmake_object_order_depends_target_ElderGlyph
   DEP_FILE = CMakeFiles\ElderGlyph.dir\entity\Entity.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ElderGlyph.dir
   OBJECT_FILE_DIR = CMakeFiles\ElderGlyph.dir\entity
 
-build CMakeFiles/ElderGlyph.dir/gold/Gold.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/gold/Gold.cpp || cmake_object_order_depends_target_ElderGlyph
+build CMakeFiles/ElderGlyph.dir/gold/Gold.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/gold/Gold.cpp || cmake_object_order_depends_target_ElderGlyph
   DEP_FILE = CMakeFiles\ElderGlyph.dir\gold\Gold.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ElderGlyph.dir
   OBJECT_FILE_DIR = CMakeFiles\ElderGlyph.dir\gold
 
-build CMakeFiles/ElderGlyph.dir/logger/Logger.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Debug C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/logger/Logger.cpp || cmake_object_order_depends_target_ElderGlyph
+build CMakeFiles/ElderGlyph.dir/logger/Logger.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/logger/Logger.cpp || cmake_object_order_depends_target_ElderGlyph
   DEP_FILE = CMakeFiles\ElderGlyph.dir\logger\Logger.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ElderGlyph.dir
   OBJECT_FILE_DIR = CMakeFiles\ElderGlyph.dir\logger
+
+build CMakeFiles/ElderGlyph.dir/help/Help.cpp.obj: CXX_COMPILER__ElderGlyph_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/help/Help.cpp || cmake_object_order_depends_target_ElderGlyph
+  DEP_FILE = CMakeFiles\ElderGlyph.dir\help\Help.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\ElderGlyph.dir
+  OBJECT_FILE_DIR = CMakeFiles\ElderGlyph.dir\help
+
+build CMakeFiles/ElderGlyph.dir/resources.rc.obj: RC_COMPILER__ElderGlyph_unscanned_Release C$:/Users/Michael$ Szotkowski/CLionProjects/ElderGlyph/resources.rc || cmake_object_order_depends_target_ElderGlyph
+  DEP_FILE = CMakeFiles\ElderGlyph.dir\resources.rc.obj.d
+  OBJECT_DIR = CMakeFiles\ElderGlyph.dir
+  OBJECT_FILE_DIR = CMakeFiles\ElderGlyph.dir
 
 
 # =============================================================================
@@ -219,8 +230,9 @@ build CMakeFiles/ElderGlyph.dir/logger/Logger.cpp.obj: CXX_COMPILER__ElderGlyph_
 #############################################
 # Link the executable ElderGlyph.exe
 
-build ElderGlyph.exe: CXX_EXECUTABLE_LINKER__ElderGlyph_Debug CMakeFiles/ElderGlyph.dir/main.cpp.obj CMakeFiles/ElderGlyph.dir/GameEngine.cpp.obj CMakeFiles/ElderGlyph.dir/Menu.cpp.obj CMakeFiles/ElderGlyph.dir/inventory/Inventory.cpp.obj CMakeFiles/ElderGlyph.dir/item/Armor.cpp.obj CMakeFiles/ElderGlyph.dir/item/Item.cpp.obj CMakeFiles/ElderGlyph.dir/item/ItemFactory.cpp.obj CMakeFiles/ElderGlyph.dir/item/Potion.cpp.obj CMakeFiles/ElderGlyph.dir/item/Weapon.cpp.obj CMakeFiles/ElderGlyph.dir/map/DefaultLocationBuilder.cpp.obj CMakeFiles/ElderGlyph.dir/map/Location.cpp.obj CMakeFiles/ElderGlyph.dir/map/LocationBuilder.cpp.obj CMakeFiles/ElderGlyph.dir/map/LocationDirector.cpp.obj CMakeFiles/ElderGlyph.dir/map/Map.cpp.obj CMakeFiles/ElderGlyph.dir/map/Tile.cpp.obj CMakeFiles/ElderGlyph.dir/monster/Dragon.cpp.obj CMakeFiles/ElderGlyph.dir/monster/Goblin.cpp.obj CMakeFiles/ElderGlyph.dir/monster/Monster.cpp.obj CMakeFiles/ElderGlyph.dir/monster/MonsterFactory.cpp.obj CMakeFiles/ElderGlyph.dir/monster/Troll.cpp.obj CMakeFiles/ElderGlyph.dir/player/Archer.cpp.obj CMakeFiles/ElderGlyph.dir/player/Mage.cpp.obj CMakeFiles/ElderGlyph.dir/player/Player.cpp.obj CMakeFiles/ElderGlyph.dir/player/Warrior.cpp.obj CMakeFiles/ElderGlyph.dir/entity/Entity.cpp.obj CMakeFiles/ElderGlyph.dir/gold/Gold.cpp.obj CMakeFiles/ElderGlyph.dir/logger/Logger.cpp.obj
-  FLAGS = -g
+build ElderGlyph.exe: CXX_EXECUTABLE_LINKER__ElderGlyph_Release CMakeFiles/ElderGlyph.dir/main.cpp.obj CMakeFiles/ElderGlyph.dir/GameEngine.cpp.obj CMakeFiles/ElderGlyph.dir/Menu.cpp.obj CMakeFiles/ElderGlyph.dir/inventory/Inventory.cpp.obj CMakeFiles/ElderGlyph.dir/item/Armor.cpp.obj CMakeFiles/ElderGlyph.dir/item/Item.cpp.obj CMakeFiles/ElderGlyph.dir/item/ItemFactory.cpp.obj CMakeFiles/ElderGlyph.dir/item/Potion.cpp.obj CMakeFiles/ElderGlyph.dir/item/Weapon.cpp.obj CMakeFiles/ElderGlyph.dir/map/DefaultLocationBuilder.cpp.obj CMakeFiles/ElderGlyph.dir/map/Location.cpp.obj CMakeFiles/ElderGlyph.dir/map/LocationBuilder.cpp.obj CMakeFiles/ElderGlyph.dir/map/LocationDirector.cpp.obj CMakeFiles/ElderGlyph.dir/map/Map.cpp.obj CMakeFiles/ElderGlyph.dir/map/Tile.cpp.obj CMakeFiles/ElderGlyph.dir/monster/Dragon.cpp.obj CMakeFiles/ElderGlyph.dir/monster/Goblin.cpp.obj CMakeFiles/ElderGlyph.dir/monster/Monster.cpp.obj CMakeFiles/ElderGlyph.dir/monster/MonsterFactory.cpp.obj CMakeFiles/ElderGlyph.dir/monster/Troll.cpp.obj CMakeFiles/ElderGlyph.dir/player/Archer.cpp.obj CMakeFiles/ElderGlyph.dir/player/Mage.cpp.obj CMakeFiles/ElderGlyph.dir/player/Player.cpp.obj CMakeFiles/ElderGlyph.dir/player/Warrior.cpp.obj CMakeFiles/ElderGlyph.dir/entity/Entity.cpp.obj CMakeFiles/ElderGlyph.dir/gold/Gold.cpp.obj CMakeFiles/ElderGlyph.dir/logger/Logger.cpp.obj CMakeFiles/ElderGlyph.dir/help/Help.cpp.obj CMakeFiles/ElderGlyph.dir/resources.rc.obj
+  FLAGS = -O3 -DNDEBUG
+  LINK_FLAGS = -static
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\ElderGlyph.dir
   POST_BUILD = cd .

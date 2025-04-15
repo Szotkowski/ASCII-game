@@ -61,4 +61,11 @@ add_executable(ElderGlyph main.cpp
         logger/Logger.cpp
         logger/Logger.h
         Menu.cpp
+        help/Help.cpp
+        help/Help.h
+        resources.rc
+)
+
+set_target_properties(ElderGlyph PROPERTIES
+        RESOURCE "${CMAKE_CURRENT_SOURCE_DIR}/resources.rc"
 )

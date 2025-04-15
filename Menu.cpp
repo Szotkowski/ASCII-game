@@ -12,7 +12,7 @@ Menu::~Menu() {
     LOG_INFO("Destroying Menu instance.");
 }
 
-const std::string Menu::options[] = {"New game", "Load game", "Options", "Quit"};
+const std::string Menu::options[] = {"New game", "Load game", "Options", "Help", "Quit"};
 
 const int Menu::numOptions = std::size(options);
 
@@ -45,16 +45,16 @@ void Menu::drawEmptyLines(int width, int count) {
 }
 
 void Menu::drawTitle(int consoleWidth) {
-    const int LEFT_PADDING = 20;
-    const int RIGHT_PADDING = 101;
+    const int LEFT_PADDING = 14;
+    const int RIGHT_PADDING = 107;
     std::string titleLines[7] = {
-        "   ###     ######   ######  #### ####      ######      ###    ##     ## ########",
-        "  ## ##   ##    ## ##    ##  ##   ##      ##    ##    ## ##   ###   ### ##      ",
-        " ##   ##  ##       ##        ##   ##      ##         ##   ##  #### #### ##      ",
-        "##     ##  ######  ##        ##   ##      ##   #### ##     ## ## ### ## ######  ",
-        "#########       ## ##        ##   ##      ##    ##  ######### ##     ## ##      ",
-        "##     ## ##    ## ##    ##  ##   ##      ##    ##  ##     ## ##     ## ##      ",
-        "##     ##  ######   ######  #### ####      ######   ##     ## ##     ## ########"
+            "######## ##       ########  ######## ########     ######   ##       ##    ## ########  ##     ##",
+            "##       ##       ##     ## ##       ##     ##   ##    ##  ##        ##  ##  ##     ## ##     ##",
+            "##       ##       ##     ## ##       ##     ##   ##        ##         ####   ##     ## ##     ##",
+            "######   ##       ##     ## ######   ########    ##   #### ##          ##    ########  #########",
+            "##       ##       ##     ## ##       ##   ##     ##    ##  ##          ##    ##        ##     ##",
+            "##       ##       ##     ## ##       ##    ##    ##    ##  ##          ##    ##        ##     ##",
+            "######## ######## ########  ######## ##     ##    ######   ########    ##    ##        ##     ##"
     };
     for (const std::string& line : titleLines) {
         std::cout << "#" << GREEN_TEXT << std::setw(consoleWidth - LEFT_PADDING) << line << RESET_TEXT << std::setw(consoleWidth - RIGHT_PADDING) << "#" << std::endl;
@@ -74,7 +74,7 @@ void Menu::buildMenu(int consoleWidth, int consoleHeight, int currentIndex) {
         drawEmptyLines(consoleWidth, 1);
     }
 
-    drawEmptyLines(consoleWidth, numEmptyLines - 4);
+    drawEmptyLines(consoleWidth, numEmptyLines - 3);
     drawBorder(consoleWidth, true);
 }
 

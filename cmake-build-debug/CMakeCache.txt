@@ -14,15 +14,6 @@
 # EXTERNAL cache entries
 ########################
 
-//Value Computed by CMake
-ASCII_Game_BINARY_DIR:STATIC=C:/Users/Michael Szotkowski/CLionProjects/ElderGlyph/cmake-build-debug
-
-//Value Computed by CMake
-ASCII_Game_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-ASCII_Game_SOURCE_DIR:STATIC=C:/Users/Michael Szotkowski/CLionProjects/ElderGlyph
-
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/addr2line.exe
 
@@ -122,7 +113,7 @@ CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=C:/Users/Michael Szotkowski/CLionProject
 CMAKE_GNUtoMS:BOOL=OFF
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/ASCII_Game
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/ElderGlyph
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/ld.exe
