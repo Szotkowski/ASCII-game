@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/Michael Szotkowski/CLionProjects/ASCII-Game
+# Install script for directory: C:/Users/Michael Szotkowski/CLionProjects/ElderGlyph
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/ASCII_Game")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/ElderGlyph")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Michael Szotkowski/CLionProjects/ASCII-Game/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Michael Szotkowski/CLionProjects/ElderGlyph/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

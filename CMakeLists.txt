@@ -1,13 +1,13 @@
-cmake_minimum_required(VERSION 3.28)
-project(ASCII_Game)
+cmake_minimum_required(VERSION 3.27.8)
+project(ElderGlyph)
 
 set(CMAKE_CXX_STANDARD 26)
 
-set(CMAKE_BUILD_TYPE Release)
+#set(CMAKE_BUILD_TYPE Release)
 
-set(CMAKE_EXE_LINKER_FLAGS "-static")
+#set(CMAKE_EXE_LINKER_FLAGS "-static")
 
-add_executable(ASCII_Game main.cpp
+add_executable(ElderGlyph main.cpp
         GameEngine.cpp
         GameEngine.h
         Menu.cpp
@@ -61,4 +61,11 @@ add_executable(ASCII_Game main.cpp
         logger/Logger.cpp
         logger/Logger.h
         Menu.cpp
+        help/Help.cpp
+        help/Help.h
+        resources.rc
+)
+
+set_target_properties(ElderGlyph PROPERTIES
+        RESOURCE "${CMAKE_CURRENT_SOURCE_DIR}/resources.rc"
 )
